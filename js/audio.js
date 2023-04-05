@@ -1,34 +1,26 @@
 const playlist = ["audio/whisper.mp3", "audio/home.mp3"];
 const soundOff = document.querySelector("#soundOff");
 let i = 0;
-let myAudio = new Audio(playlist[i]);
+const myAudio = new Audio(playlist[i]);
 let a = 0;
 
-let has_clicked;
-window.addEventListener("click", () => {
-  has_clicked = true;
-});
-window.addEventListener("touchstart", () => {
-  has_clicked = true;
-});
-
 function speakerChanger() {
-  if (a == 0 && !has_clicked) return;
-  //console.log(myAudio.currentSrc);
-  myAudio = new Audio(playlist[i]);
-  myAudio.load();
-  let promise = myAudio.play();
-  if (promise !== undefined) {
-    promise
-      .then((_) => {
-        myAudio.pause();
-      })
-      .catch((error) => {
-        console.log("error");
-      });
+  if (a == 0) {
+    //console.log(myAudio.currentSrc);
+    myAudio.load();
+    let promise = myAudio.play();
+    if (promise !== undefined) {
+      promise
+        .then((_) => {
+          myAudio.pause();
+        })
+        .catch((error) => {
+          console.log("error");
+        });
 
-    myAudio.addEventListener("ended", soundChanger);
-    a++;
+      myAudio.addEventListener("ended", soundChanger);
+      a++;
+    }
   } else {
     myAudio.pause();
     a--;
