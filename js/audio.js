@@ -21,12 +21,13 @@ function speakerChanger() {
   if (a == 0) {
     //console.log(myAudio.currentSrc);
     myAudio.load();
-    myAudio
-      .play()
-      .then(() => {})
-      .catch((error) => {
+    let promise = myAudio.play();
+    if (promise) {
+      promise.catch(function (error) {
         console.error(error);
       });
+    }
+
     myAudio.addEventListener("ended", soundChanger);
     a++;
   } else {
