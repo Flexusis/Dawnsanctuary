@@ -21,7 +21,10 @@ function speakerChanger() {
   if (a == 0) {
     //console.log(myAudio.currentSrc);
     myAudio.load();
-    myAudio.play();
+    myAudio
+      .play()
+      .then(() => {})
+      .catch(console.error(error));
     myAudio.addEventListener("ended", soundChanger);
     a++;
   } else {
