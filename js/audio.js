@@ -1,8 +1,13 @@
-const playlist = ["audio/whisper.mp3", "audio/home.mp3"];
-const soundOff = document.querySelector("#soundOff");
 let i = 0;
-const myAudio = new Audio(playlist[i]);
 let a = 0;
+const soundOff = document.querySelector("#soundOff");
+const playlist = ["audio/whisper.mp3", "audio/home.mp3"];
+const myAudio = new Audio(playlist[i]);
+
+soundOff.addEventListener("click", () => {
+  let context = new AudioContext();
+  context.resume;
+});
 
 function speakerChanger() {
   myAudio.load();
@@ -33,14 +38,6 @@ function speakerChanger() {
   }
 }
 soundOff.addEventListener("click", speakerChanger);
-soundOff.addEventListener("click", () => {
-  context.resume.then(() => {
-    console.log("Playback resumed successfully");
-  });
-});
-window.onload = () => {
-  let context = new AudioContext();
-};
 
 //play file sequentially
 function soundChanger() {
