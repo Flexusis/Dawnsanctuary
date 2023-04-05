@@ -11,8 +11,10 @@ function speakerChanger() {
     let promise = myAudio.play();
     if (promise !== undefined) {
       promise
-        .then((_) => {
-          myAudio.pause();
+        .then((value) => {
+          console.log("success", value);
+          myAudio.load();
+          myAudio.play();
         })
         .catch((error) => {
           console.log("error");
