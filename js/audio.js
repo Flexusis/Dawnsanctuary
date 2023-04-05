@@ -24,7 +24,9 @@ function speakerChanger() {
     myAudio
       .play()
       .then(() => {})
-      .catch(console.error("error!"));
+      .catch((error) => {
+        console.error(error);
+      });
     myAudio.addEventListener("ended", soundChanger);
     a++;
   } else {
