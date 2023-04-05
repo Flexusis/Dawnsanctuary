@@ -17,14 +17,15 @@ function speakerChanger() {
     //console.log(myAudio.currentSrc);
     myAudio = new Audio(playlist[i]);
     myAudio.load();
-    let promise = myAudio.play();
-    if (promise !== undefined) {
-      promise
-        .then((_) => {})
-        .catch((error) => {
-          console.log("error");
-        });
-    }
+    myAudio.play();
+    //let promise = myAudio.play();
+    // if (promise !== undefined) {
+    //   promise
+    //     .then((_) => {})
+    //     .catch((error) => {
+    //       console.log("error");
+    //     });
+    // }
 
     myAudio.addEventListener("ended", soundChanger);
     a++;
