@@ -36,6 +36,14 @@ function speakerChanger() {
   }
 }
 soundOff.addEventListener("click", speakerChanger);
+soundOff.addEventListener("click", () => {
+  context.resume.then(() => {
+    console.log("Playback resumed successfully");
+  });
+});
+window.onload = () => {
+  let context = new AudioContext();
+};
 
 //play file sequentially
 function soundChanger() {
