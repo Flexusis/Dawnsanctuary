@@ -13,19 +13,19 @@ window.addEventListener("touchstart", () => {
 });
 
 function speakerChanger() {
-  if (a == 0 && !has_clicked) {
-    //console.log(myAudio.currentSrc);
-    myAudio = new Audio(playlist[i]);
-    myAudio.load();
-    myAudio.play();
-    //let promise = myAudio.play();
-    // if (promise !== undefined) {
-    //   promise
-    //     .then((_) => {})
-    //     .catch((error) => {
-    //       console.log("error");
-    //     });
-    // }
+  if (a == 0 && !has_clicked) return;
+  //console.log(myAudio.currentSrc);
+  myAudio = new Audio(playlist[i]);
+  myAudio.load();
+  let promise = myAudio.play();
+  if (promise !== undefined) {
+    promise
+      .then((_) => {
+        myAudio.pause();
+      })
+      .catch((error) => {
+        console.log("error");
+      });
 
     myAudio.addEventListener("ended", soundChanger);
     a++;
