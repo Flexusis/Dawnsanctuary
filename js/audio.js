@@ -22,7 +22,7 @@ function speakerChanger() {
       promise
         .then((_) => {})
         .catch((error) => {
-          console.error(error);
+          console.log("error");
         });
     }
 
