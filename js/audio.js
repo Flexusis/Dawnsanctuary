@@ -5,24 +5,21 @@ const myAudio = new Audio(playlist[i]);
 let a = 0;
 
 function speakerChanger() {
+  myAudio.load();
+  //console.log(myAudio.currentSrc);
   if (a == 0) {
-    //console.log(myAudio.currentSrc);
-    myAudio.load();
     let promise = myAudio.play();
     if (promise !== undefined) {
       promise
         .then((value) => {
           console.log("success", value);
-          myAudio.load();
-          myAudio.play();
         })
         .catch((error) => {
           console.log("error");
         });
-
-      myAudio.addEventListener("ended", soundChanger);
-      a++;
     }
+    myAudio.addEventListener("ended", soundChanger);
+    a++;
   } else {
     myAudio.pause();
     a--;
