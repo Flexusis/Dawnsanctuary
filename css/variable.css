@@ -1,0 +1,21 @@
+:root {
+  --pink: pink;
+  --border: 0.15vw solid rgba(0, 0, 0, 1);
+  --green: #43b149;
+
+  --full_left: 30vw;
+
+  --full_titile_sideMenu_top: 8vw;
+  --full_title_fontSize: 2.3vw;
+
+  --full_content_fontSize: 1.1vw;
+  --full_content_width: 50vw;
+  --full_content_top: 10vh;
+
+  --full_footer_fontSize: 1vw;
+
+  --left_820: 33vw;
+
+  /*  --width:
+    --height: */
+}

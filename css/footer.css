@@ -1,0 +1,221 @@
+.foo {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  bottom: 0vh;
+
+  background-color: #f9d8e7;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: var(--full_footer_fontSize);
+}
+
+#foo_history {
+  top: 170vh;
+  /* height: -webkit-fill-available; */
+}
+
+#foo_ask {
+  top: 0vh;
+}
+
+.foo_firstBox {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding-left: 6vw;
+  margin-bottom: 4vw;
+  padding-top: 4vw;
+}
+
+.foo_firstBox-block {
+  padding-top: 2vw;
+  display: flex;
+  flex-direction: row;
+  line-height: 2vw;
+}
+
+.foo_info {
+  margin-left: 5vw;
+  font-weight: 400;
+}
+
+.foo_secondBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border: var(--border);
+  margin-left: -4vw;
+  margin-top: 5.6vw;
+  width: 25vw;
+  height: 7vw;
+  /* overflow: hidden; */
+}
+
+.foo_setx {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1vw;
+  padding-left: 1.4vw;
+  justify-content: space-between;
+}
+
+.foo_setx > a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.foo_setx:hover {
+  background-color: #44a949;
+  cursor: pointer;
+  color: white;
+}
+
+#foo_se_firBox {
+  display: flex;
+  border-bottom: var(--border);
+  height: 50%;
+}
+
+#foo_se_seBox {
+  display: flex;
+  height: 50%;
+}
+
+.foo_btn {
+  display: flex;
+  position: relative;
+  top: -0.2vw;
+  right: -1vw;
+  width: 25%;
+  height: 100%;
+}
+
+.foo_btn a img {
+  width: 1.8vw;
+}
+
+@media screen and (max-width: 820px) {
+  .foo {
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 2vw;
+    line-height: 2vw;
+
+    bottom: -17.5vh;
+    height: 30vw;
+  }
+  #foo_coming {
+    position: fixed;
+    bottom: 0;
+  }
+
+  #foo_history {
+    top: 145vh;
+    /* height: -webkit-fill-available; */
+  }
+
+  #foo_goods {
+    bottom: -300vw;
+    /* height: -webkit-fill-available; */
+  }
+
+  #foo_ask {
+    top: 30vh;
+  }
+  .foo_firstBox {
+    width: 50%;
+    padding-left: 6vw;
+    padding-top: 7vw;
+  }
+  .foo_firstBox-block {
+    line-height: 3vw;
+  }
+
+  .foo_info {
+    margin-left: 5vw;
+    line-height: 3vw;
+  }
+
+  .foo_secondBox {
+    margin-left: 3vw;
+    margin-top: 12vw;
+    width: 30vw;
+    height: 10vw;
+    overflow: hidden;
+  }
+  .foo_btn {
+    display: flex;
+    position: relative;
+    right: -0.4vw;
+    top: -0.3vw;
+    width: 24%;
+    height: 100%;
+  }
+  .foo_btn a img {
+    width: 3vw;
+  }
+  .foo_setx {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.28vw;
+    padding-left: 2.4vw;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 375px) {
+    .foo {
+      display: flex;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      font-size: 2vw;
+      line-height: 2vw;
+
+      bottom: -17.5vh;
+      height: 30vw;
+    }
+    #foo_coming {
+      position: fixed;
+      bottom: 0;
+    }
+
+    #foo_goods {
+      bottom: -100vh;
+      margin-bottom: 0;
+    }
+    .foo_firstBox {
+      width: 65%;
+      padding-left: 6vw;
+    }
+    .foo_firstBox-block {
+      line-height: 3vw;
+    }
+
+    .foo_info {
+      margin-left: 5vw;
+      line-height: 3vw;
+    }
+
+    .foo_secondBox {
+      margin-left: 2vw;
+      margin-top: 10vw;
+      width: 23vw;
+      height: 10vw;
+      overflow: hidden;
+    }
+
+    .foo_setx {
+      padding-left: 7vw;
+      padding-top: 1.7vw;
+      justify-content: space-between;
+    }
+    .foo_btn {
+      display: none;
+    }
+  }
+}

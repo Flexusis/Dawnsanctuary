@@ -1,0 +1,293 @@
+@media screen and (max-width: 375px) {
+  html,
+  body {
+    position: fixed;
+    overflow: hidden;
+  }
+  body > .mainWrapper {
+    width: 100vw;
+    /* height: 100vh; */
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: visible;
+    height: -webkit-fill-available;
+    -webkit-overflow-scrolling: touch;
+  }
+  /*//////////////// menu ///////////////*/
+  .menu {
+    padding: 17px 30px;
+  }
+  .menu__logo {
+    width: 27%;
+    text-align: center;
+  }
+
+  .menu__logo img {
+    width: 150px;
+    min-width: 160px;
+    height: 40px;
+    min-height: 53px;
+    text-align: center;
+  }
+
+  /*//////////////// about page ///////////////*/
+  .title,
+  .title_buss {
+    display: flex;
+    position: relative;
+    left: 35vw;
+    font-size: 4.5vw;
+  }
+
+  .about-content {
+    left: 35vw;
+    font-size: 4vw;
+    font-weight: 500;
+    width: 57vw;
+    height: fit-content;
+    line-height: 6.6vw;
+    margin-bottom: 10vw;
+  }
+  /* #mission_title {
+  } */
+  .about-mision {
+    z-index: auto;
+    position: relative;
+    left: 35vw;
+    font-size: 3.8vw;
+    font-family: "GangwonEduPowerExtraBoldA";
+    font-weight: 600;
+    color: #43b149;
+  }
+  #mainWrapper_coming {
+    overflow-y: hidden;
+  }
+
+  #about-content_donation {
+    top: 2.5vw;
+    font-size: 4vw;
+    height: auto;
+    margin-right: 0;
+  }
+  #about-content_introduce {
+    top: 2.5vw;
+    font-size: 4vw;
+    height: auto;
+    margin-right: 0;
+  }
+  #about-content_human {
+    top: 10vw;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .about-history {
+    height: 1%;
+  }
+  .about-history2,
+  .about-history3 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -30vw;
+  }
+
+  .about-history3 {
+    top: -70vw;
+  }
+
+  .about-historyContent1,
+  .about-historyContent2 {
+    font-size: 2vw;
+    height: 7.2vw;
+  }
+  .about-historyHeader {
+    font-size: 3.8vw;
+  }
+  .about-historyContent {
+    height: 85vw;
+  }
+
+  .htext {
+    display: flex;
+    position: absolute;
+    line-height: 1.6vw;
+  }
+
+  .logo-content {
+    display: block;
+    margin-left: -29vw;
+    top: 20vw;
+    margin-bottom: -40vw;
+  }
+  .logo-content img {
+    display: inline-block;
+    height: 50vw;
+    width: auto;
+    margin-left: 13vw;
+    top: 10vw;
+  }
+  .logo_title {
+    top:-20vw;
+    margin-left: 13vw;
+    display: flex;
+    position: relative;
+  }
+  .introduce-title {
+    font-size: 3.9vw;
+    line-height: 5.9vw;
+    width: 53vw;
+    left: 35vw;
+    font-size: 4.5vw;
+    top: -1vw;
+  }
+
+  .human-title {
+    font-size: 3.9vw;
+    line-height: 5.9vw;
+    width: 53vw;
+    left: 35vw;
+    font-size: 4.5vw;
+    top: 10vw;
+  }
+
+  .input-house {
+    display: flex;
+    position: relative;
+    top: 6vh;
+  }
+
+  .goods-content {
+    top: 10vw;
+  }
+  /* .menu.active {
+    border: var(--border);
+  } */
+
+  .menu1.active,
+  .menu2.active {
+    width: 80px;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    /* border: var(--border); */
+    /* border: none; */
+    background-color: white;
+  }
+
+  .menu-li1.active,
+  .menu-li2.active,
+  .menu-li3.active,
+  .menu-li4.active {
+    width: 100%;
+    /* border: var(--border); */
+    /* border: none; */
+    /* border-bottom: var(--border); */
+    border-radius: 0%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .donation {
+    padding: 8px 30px;
+    border: 1.2px solid rgba(0, 0, 0, 1);
+  }
+
+  .donation li {
+    font-size: 4vw;
+  }
+
+  @keyframes dawn-ani {
+    0% {
+      transform: translate(0vw, 0vh);
+    }
+
+    100% {
+      transform: translate(-100vw, -10vh);
+    }
+  }
+
+  @keyframes lawn-ani {
+    0% {
+      transform: translate(0, 0vh);
+    }
+
+    100% {
+      transform: translate(100vw, -5vh);
+    }
+  }
+
+  #dawn {
+    position: absolute;
+    right: -20vw;
+    top: 80vh;
+    animation: dawn-ani 80s infinite linear;
+  }
+
+  #lawn {
+    position: absolute;
+    left: 0vw;
+    top: 70vh;
+    animation: lawn-ani 80s infinite linear;
+  }
+
+  .bgi {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+  }
+  .bgi_main {
+    width: 100vh;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+  }
+  .side-img {
+    display: none;
+  }
+  .depth1_btn {
+    display: none;
+    cursor: pointer;
+    z-index: 500;
+  }
+
+  .depth1_btn.active {
+    display: flex;
+    position: relative;
+    font-size: 8vw;
+    left: 79vw;
+    top: 17vh;
+    width: 7vw;
+    cursor: pointer !important;
+  }
+
+  .depth1_375 {
+    display: none;
+  }
+
+  .depth1_375.active {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-decoration: none;
+    border: var(--border);
+    top: 24vh;
+    right: 25vw;
+    width: 40vw;
+    height: 17vh;
+    text-align: center;
+  }
+  .depth1_375 > li {
+    border: none;
+    border-bottom: var(--border);
+  }
+  .depth1_375 li:last-child {
+    border-bottom: none;
+  }
+
+  .depth1_375 > li:hover {
+    font-style: italic;
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="naver-site-verification" content="6fe1fb23015c406811f44a045d9bd9b1215542d6" />
+  <link rel="shortcut icon" href="image/logo.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+
+  <title>새벽이생추어리</title>
+  <link rel="icon" href="/favicon.svg" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="screen and (max-width: 820px)" href="css/maxWidth820.css">
+  <link rel="stylesheet" media="screen and (max-width: 375px)" href="css/maxWidth375.css">
+
+
+  <!-- js -->
+  <script src="https://kit.fontawesome.com/fcf5401e5d.js" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script src="js/mail.js" type="module" defer></script>
+  <script src="js/toggle.js" type="module" defer></script>
+  <!-- font awsome -->
+  <script src="https://kit.fontawesome.com/fcf5401e5d.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+  body {
+    height: 100vh;
+  }
+</style>
+
+<body>
+
+  <div class="mainWrapper">
+    <nav id="aboutMenu" class="menu">
+      <!-- 소개,  활동-->
+      <ul class="menu1">
+        <li class="menu-li1">
+          <a href="about.html">소개</a>
+          <ul class="depth1">
+            <li><a href="about.html">단체 소개</a></li>
+            <hr />
+            <li><a href="introduce.html">거주동물 소개</a></li>
+            <hr />
+            <li><a href="humananimal.html">함께하는 인간동물</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-li2"><a href="act.html">활동</a></li>
+      </ul>
+
+      <!-- 상단로고 -->
+      <a href="index.html" class="menu__logo">
+        <img src="image/logo.png" alt="logo" />
+      </a>
+
+      <!-- 공지, 후원 -->
+      <ul class="menu2">
+        <li class="menu-li3"><a href="notice.html">공지</a></li>
+        <li class="menu-li4"><a href="donation.html">후원</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="navbar_toggle">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+
+    <a href="#" class="depth1_btn"><i class="fa-solid fa-caret-left"></i></a>
+
+    <ul class="depth1_375">
+      <li><a href="about.html">단체 소개</a></li>
+      <li><a href="introduce.html">거주동물 소개</a></li>
+      <li><a href="humananimal.html">함께하는 인간동물</a></li>
+    </ul>
+
+    <div class="input-house">
+      <div class="email">
+        <div class="input-content">
+          <div class="input-content_cate">이메일(email)</div>
+          <input class="input-content_area" type="text" name="email" placeholder="" />
+        </div>
+
+        <div class="input-content">
+          <div class="input-content_cate">이름(name)</div>
+          <input class="input-content_area" type="text" name="name" placeholder="" />
+        </div>
+
+        <div class="input-content">
+          <div class="input-content_cate">내용(text)</div>
+          <textarea class="input-content_area" name="message" rows="5" placeholder=""></textarea>
+        </div>
+
+        <input type="button" name="submit" class="btn white" value="문의하기" />
+      </div>
+    </div>
+
+    <footer id="foo_ask" class="foo">
+      <div class="foo_firstBox">
+        <div>새벽이생추어리</div>
+
+        <div class="foo_firstBox-block">
+          <div>
+            <div>주소</div>
+            <div>고유번호</div>
+            <div>이메일</div>
+            <div>후원</div>
+          </div>
+          <div class="foo_info">
+            <div>서울시 중구 서애로1길 2, 3층 서울동물권센터</div>
+            <div>114-82-74035</div>
+            <div>dawnsanctuarykr@gmail.com</div>
+            <div>우리 1005-604-256046 새벽이생추어리</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 후원,문의하기 -->
+      <div class="foo_secondBox">
+
+        <div id="foo_se_firBox" class="foo_setx">
+          <a href="https://secure.donus.org/dawnsanctuary/pay/step1">
+            <div>후원하기</div>
+            <div class="foo_btn"><a><img src="image/button.png"></a></div>
+        </div>
+
+        <div id="foo_se_seBox" class="foo_setx">
+          <a href="ask.html">
+            <div>문의하기</div>
+            <div class="foo_btn"><a><img src="image/button.png"></a></div>
+          </a>
+        </div>
+      </div>
+
+    </footer>
+  </div>
+
+</body>
+
+</html>
